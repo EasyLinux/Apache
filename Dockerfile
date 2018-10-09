@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.8
 LABEL author="Serge NOEL <serge.noel@net6a.com.fr>"
 
 RUN apk update \
