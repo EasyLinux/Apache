@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM alpine:3.12
 LABEL author="Serge NOEL <serge.noel@easylinux.fr>" \
       description="Apache avec Php" 
 
