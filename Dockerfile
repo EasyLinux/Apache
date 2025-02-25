@@ -1,11 +1,11 @@
-FROM alpine:3.12
+FROM alpine:3.21
 LABEL author="Serge NOEL <serge.noel@easylinux.fr>" \
       description="Apache avec Php" 
 
 # Installer les paquets Apache2, php et Imap
 RUN apk add apache2 \
-            php7-apache2 \
-            php7-imap \
+            php84-apache2 \
+            php84-imap \
     && mkdir -p /var/www/html \
     && sed -i "s|/var/www/localhost/htdocs|/var/www/html|g" /etc/apache2/httpd.conf \
     && echo "<?php   phpinfo();" > /var/www/html/index.php \
